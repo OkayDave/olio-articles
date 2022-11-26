@@ -1,24 +1,43 @@
-# README
+# OLIO Technical Test
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Purpose
 
-Things you may want to cover:
+This repository is [Dave Russell's](https://www.linkedin.com/in/dave-russell-a77b59b/) submission for the OLIO technical test. It is a basic Rails application which displays a list of articles from a JSON source and allows users to perform a 'like' action on them.
 
-* Ruby version
+The full brief for the test is available [here](https://tech.olioex.com/rails-coding-task.html).
 
-* System dependencies
+## Tasks
 
-* Configuration
+* **T1** - Initial commit and documentation
+* **T2** - Rubocop setup
+* **T3** - Add Skeleton UI
+* **T4** - Retrieve articles and display in UI
+* **T5** - Basic authentication
+* **T6** - Introduce concept of 'Like'
+* **T7** - Tidy up / refactor
 
-* Database creation
+## Running
 
-* Database initialization
+This application was developed against Ruby 3.1.2 and Rails 7.0.4. It uses SQLite as its store.
 
-* How to run the test suite
+To prepare the application:
 
-* Services (job queues, cache servers, search engines, etc.)
+```bash
+git clone git@github.com:OkayDave/olio-articles.git
+cd olio-articles
+bundle install
+bin/rake db:setup
+```
 
-* Deployment instructions
+To run the test suite:
 
-* ...
+```bash
+bin/rake
+```
+
+To run the application:
+
+```bash
+bin/rails s
+```
+
