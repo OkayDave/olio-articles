@@ -9,7 +9,7 @@ The full brief for the test is available [here](https://tech.olioex.com/rails-co
 ## Tasks
 
 * **T1** - Initial commit and documentation
-* **T2** - Rubocop setup
+* **T2** - Rubocop and Test setup
 * **T3** - Add Skeleton UI
 * **T4** - Retrieve articles and display in UI
 * **T5** - Basic authentication
