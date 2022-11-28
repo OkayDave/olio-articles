@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   resources :sessions, only: %i[new create] do
     delete :destroy, on: :collection
   end
+  resources :likes, only: %i[create destroy]
 
   # Defines the root path route ("/")
   root 'home#index'

@@ -2,7 +2,7 @@
 
 class ArticlesController < ApplicationController
   def index
-    @articles = ArticleCollection.new_from_endpoint.articles
+    @articles = ArticleCollection.new_from_endpoint(current_user).articles
 
     render layout: false
   end

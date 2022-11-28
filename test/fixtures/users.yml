@@ -8,3 +8,8 @@ dave:
   email: dave@example.com
   salt: <%= salt = 'asdasdastr4325234324sdfds' %>
   crypted_password: <%= Sorcery::CryptoProviders::BCrypt.encrypt('password123', salt) %>
+
+joanne:
+  email: joanne@example.com
+  salt: <%= salt = 'asdasdastr4325234324sdfds' %>
+  crypted_password: <%= Sorcery::CryptoProviders::BCrypt.encrypt('password123', salt) %>

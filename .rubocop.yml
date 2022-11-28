@@ -8,3 +8,10 @@ AllCops:
 
 Style/Documentation:
   Enabled: false
+
+Metrics/BlockLength:
+  Exclude:
+    - test/**/*
+
+Metrics/MethodLength:
+  Max: 15

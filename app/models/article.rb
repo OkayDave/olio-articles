@@ -8,6 +8,8 @@ class Article
     attr_accessor key
   end
 
+  attr_accessor :liked_by_user
+
   def initialize(article_json)
     check_json!(article_json)
 
