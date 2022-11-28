@@ -1,5 +1,5 @@
 <div class="group relative article" id="article_<%= article.id %>">
-  <div class="min-h-80 aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-md bg-gray-200 group-hover:opacity-75 lg:aspect-none lg:h-80">
+  <div class="min-h-80 aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-md bg-gray-200 group-hover:saturate-200 lg:aspect-none lg:h-80 rounded-l border-4">
     <%= image_tag article.images.first.dig('files', 'original'),
                 alt: article.title,
                 class: 'h-full w-full object-cover object-center lg:h-full lg:w-full'

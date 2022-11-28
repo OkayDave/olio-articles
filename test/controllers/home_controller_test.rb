@@ -11,6 +11,6 @@ class HomeControllerTest < ActionDispatch::IntegrationTest
     get root_url
 
     assert_response :success
-    assert_select 'h1', 'Articles'
+    assert_select 'nav', /OLIO Articles/
   end
 end
