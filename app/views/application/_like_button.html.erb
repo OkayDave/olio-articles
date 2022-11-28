@@ -1,0 +1,18 @@
+<div class="z-50" id="likeable_<%= likeable.id %>_like_button" class="like-button-container">
+  <%- if user_present %>
+    <%= button_to url,
+                  data: { turbo: false },
+                  class: "text-center cursor-pointer w-full font-medium rounded-lg text-gray-900 border-2  #{'bg-blue-400' if liked_by_user}",
+                  method: http_method do %>
+      <span id="likeable_#{likeable.id}_like_count">
+        <%= like_count %>
+      </span>
+      ♥
+    <%- end %>
+  <%- else %>
+    <span id="likeable_#{likeable.id}_like_count" class="w-full text-right">
+      <%= like_count %>
+    </span>
+    ♥
+  <% end %>
+</div>
